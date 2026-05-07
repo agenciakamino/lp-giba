@@ -971,6 +971,7 @@ footer strong {
   margin-left: -5%;
   margin-top: -10%;
   margin-bottom: -10%;
+  filter: brightness(0) invert(1);
 }
 
 /* === PANEL EVENT BADGE === */
