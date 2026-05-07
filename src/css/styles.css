@@ -88,7 +88,7 @@ img { display: block; max-width: 100%; }
 /* === HERO === */
 .hero {
   position: relative;
-  min-height: clamp(520px, 72vh, 700px);
+  min-height: clamp(640px, 86vh, 860px);
   overflow: hidden;
   border-radius: var(--radius-xl);
   border: 1px solid var(--line);
@@ -117,7 +117,7 @@ img { display: block; max-width: 100%; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 76% center;
+  object-position: 76% 38%;
   filter: brightness(1.12) contrast(1.04);
 }
 
@@ -177,7 +177,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: clamp(26px, 6vw, 58px);
+  padding: clamp(26px, 6vw, 58px) clamp(26px, 6vw, 58px) clamp(20px, 3vw, 32px);
   max-width: 690px;
   position: relative;
   z-index: 2;
@@ -828,12 +828,12 @@ footer strong {
 @media (max-width: 760px) {
   .page { width: min(100% - 22px, var(--max)); padding-top: 12px; }
 
-  .hero { min-height: 780px; }
+  .hero { min-height: 700px; }
 
   .hero::before {
     background:
-      radial-gradient(circle at 50% 22%, rgba(23, 60, 234, .22), transparent 16rem),
-      linear-gradient(180deg, rgba(2, 5, 16, .12) 0%, rgba(2, 5, 16, .92) 68%);
+      radial-gradient(circle at 50% 22%, rgba(23, 60, 234, .16), transparent 14rem),
+      linear-gradient(180deg, rgba(2, 5, 16, .04) 0%, rgba(2, 5, 16, .78) 72%);
   }
 
   .hero__photo {
@@ -841,15 +841,15 @@ footer strong {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 15%;
+    object-position: 50% 22%;
     transform: none;
-    filter: brightness(1.12) contrast(1.04);
+    filter: brightness(1.18) contrast(1.04);
   }
 
   .hero__seal {
-    width: 94px;
-    top: 22px;
-    right: 18px;
+    width: 80px;
+    top: 16px;
+    right: 14px;
   }
 
   .hero__seal-text {
@@ -857,15 +857,17 @@ footer strong {
     letter-spacing: .12em;
   }
 
-  .hero-socials { gap: 12px; }
+  .hero-socials { gap: 10px; }
 
   .hero__content {
     justify-content: flex-end;
-    padding: 26px;
+    padding: 22px 22px 18px;
   }
 
   h1 { font-size: clamp(52px, 18vw, 86px); }
-  .lead { font-size: 18px; }
+  .lead { font-size: 16px; margin-top: 12px; }
+  .hero-socials { margin-top: 14px; }
+  .actions { margin-top: 16px; }
 
   .actions .btn { flex: 1 1 100%; }
 
@@ -1041,7 +1043,7 @@ sup.reg {
 }
 
 @media (max-width: 760px) {
-  .hero__title-logo img { width: clamp(260px, 78vw, 400px); }
+  .hero__title-logo img { width: clamp(200px, 62vw, 320px); }
 
   .mentoria-cta__inner {
     flex-direction: column;
@@ -1055,5 +1057,5 @@ sup.reg {
 }
 
 @media (max-width: 430px) {
-  .hero__title-logo img { width: clamp(240px, 82vw, 360px); }
+  .hero__title-logo img { width: clamp(180px, 68vw, 280px); }
 }
