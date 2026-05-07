@@ -50,7 +50,7 @@
   }, { threshold: .12 })
 
   document.querySelectorAll('.reveal').forEach((el, i) => {
-    el.style.transitionDelay = `${Math.min(i * 55, 320)}ms`
+    el.style.transitionDelay = `${Math.min(i * 38, 220)}ms`
     observer.observe(el)
   })
 })()
