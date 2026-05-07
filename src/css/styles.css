@@ -691,8 +691,8 @@ h1 span {
 
 .signature-band img {
   width: min(100%, 310px);
-  margin-left: -20px;
-  margin-top: -20px;
+  margin-left: -10px;
+  margin-top: -10px;
   margin-bottom: -20px;
 }
 
