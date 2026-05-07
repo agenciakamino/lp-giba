@@ -558,6 +558,28 @@ h1 span {
 
 .split + .links { margin-top: 18px; }
 
+.panel--experience {
+  grid-column: 1 / -1;
+  background:
+    radial-gradient(circle at 90% 50%, rgba(49, 86, 255, .18), transparent 22rem),
+    linear-gradient(135deg, rgba(255, 252, 245, .08), rgba(255, 252, 245, .03)),
+    rgba(5, 10, 28, .72);
+  border-color: rgba(49, 86, 255, .22);
+}
+
+.panel--experience .panel__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.panel__experience-text { flex: 1; min-width: 0; }
+
+.panel__experience-cta { flex-shrink: 0; }
+
+.panel--experience h2 { max-width: 640px; }
+
 .panel {
   position: relative;
   overflow: hidden;
@@ -897,6 +919,14 @@ footer strong {
   .signature-band__inner {
     grid-template-columns: 1fr;
   }
+
+  .panel--experience .panel__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .panel__experience-cta .btn { width: 100%; justify-content: center; }
 
   .signature-band img { width: 220px; }
 }
