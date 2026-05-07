@@ -1077,8 +1077,21 @@ sup.reg {
   white-space: nowrap;
 }
 
+.mentoria-cta--light {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: rgba(23, 60, 234, .14);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255,255,255,.90);
+  margin-top: 14px;
+}
+
+.mentoria-cta--light .mentoria-cta__kicker { color: rgba(21, 21, 21, .55); }
+.mentoria-cta--light .mentoria-cta__title  { color: var(--ink); text-shadow: none; }
+.mentoria-cta--light .mentoria-cta__desc   { color: rgba(21, 21, 21, .66); }
+
 @media (max-width: 760px) {
-  .hero__title-logo img { width: clamp(200px, 62vw, 320px); }
+  /* stronger left pull on mobile to compensate logo PNG transparent padding */
+  .hero__title-logo img { width: clamp(200px, 62vw, 320px); margin-left: -9%; }
 
   .mentoria-cta__inner {
     flex-direction: column;
