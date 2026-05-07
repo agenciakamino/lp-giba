@@ -691,6 +691,9 @@ h1 span {
 
 .signature-band img {
   width: min(100%, 310px);
+  margin-left: -6.6%;
+  margin-top: -10%;
+  margin-bottom: -10%;
 }
 
 .signature-band h2 {
@@ -1090,8 +1093,7 @@ sup.reg {
 .mentoria-cta--light .mentoria-cta__desc   { color: rgba(21, 21, 21, .66); }
 
 @media (max-width: 760px) {
-  /* stronger left pull on mobile to compensate logo PNG transparent padding */
-  .hero__title-logo img { width: clamp(200px, 62vw, 320px); margin-left: -9%; }
+  .hero__title-logo img { width: clamp(200px, 62vw, 320px); margin-left: -6%; }
 
   .mentoria-cta__inner {
     flex-direction: column;
