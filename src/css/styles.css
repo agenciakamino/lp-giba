@@ -184,7 +184,7 @@ img { display: block; max-width: 100%; }
 /* === HERO === */
 .hero {
   position: relative;
-  min-height: clamp(690px, 86vh, 860px);
+  min-height: clamp(520px, 72vh, 700px);
   overflow: hidden;
   border-radius: var(--radius-xl);
   border: 1px solid var(--line);
@@ -646,6 +646,8 @@ h1 span {
   margin-top: 18px;
 }
 
+.split + .links { margin-top: 18px; }
+
 .panel {
   position: relative;
   overflow: hidden;
@@ -1022,13 +1024,14 @@ footer strong {
   max-width: none;
   text-shadow: none;
   letter-spacing: 0;
-  margin: 0;
+  margin: 0 0 4px;
 }
 
 .hero__title-logo img {
   display: block;
-  width: clamp(190px, 42vw, 360px);
+  width: clamp(200px, 44vw, 380px);
   height: auto;
+  margin-left: -4px;
 }
 
 /* === PANEL EVENT BADGE === */
